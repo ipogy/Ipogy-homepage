@@ -3,6 +3,7 @@ db_data
 
 backend/uploads/images/*
 backend/node_modules/
+backend/package-lock.json
 
 db_data
 
@@ -10,5 +11,6 @@ db/init.sql
 
 frontend/app/
 frontend/node_modules/
+frontend/package-lock.json
 
 others

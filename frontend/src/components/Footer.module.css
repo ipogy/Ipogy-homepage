@@ -1,0 +1,60 @@
+.footer {
+    background-color: #f5f5f5; /* 背景色 */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footerContent {
+    max-width: 960px; /* コンテンツ幅の制限 */
+    margin: 0 auto;
+  }
+  
+  .copyright {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .socialLinks a {
+    color: #777;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem; /* アイコンサイズ調整 */
+  }
+  
+  .socialLinks a:hover {
+    color: #333;
+  }
+  
+  .socialIcon {
+    font-size: 1.5rem !important; /* Material Icons のサイズ調整 */
+  }
+  
+  .siteMap ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 画面幅が狭い場合に折り返す */
+  }
+  
+  .siteMap li {
+    margin: 0 15px;
+  }
+  
+  .siteMap li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .siteMap li a:hover {
+    color: #333;
+  }

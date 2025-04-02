@@ -1,0 +1,109 @@
+.termsOfServiceContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.termsOfServiceContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+.termsOfServiceText {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .termsOfServiceContent h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #222 /* 例: 別のアクセントカラー */
+  }
+  
+  .termsOfServiceContent p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  .termsOfServiceContent p a {
+    color: #337ab7;
+    text-decoration: underline; /* 下線を引く */
+    transition: color 0.3s ease; /* ホバー時のアニメーション */
+  }
+  
+  .termsOfServiceContent p a:hover {
+    color: #0056b3; /* ホバー時にもう少し濃い青 */
+    text-decoration: none; /* ホバー時に下線を消す (お好みで) */
+  }
+  
+  .termsOfServiceContent ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+  
+  .termsOfServiceContent li {
+    margin-bottom: 8px;
+    list-style-type: decimal; /* 番号付きリストにする例 */
+    font-size: 1rem;
+  }
+  
+  /* モバイル対応 (画面幅 768px 以下) */
+  @media (max-width: 768px) {
+    .termsOfServiceContent {
+      padding: 15px;
+      line-height: 1.7;
+    }
+  
+    .termsOfServiceContent h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  
+    .termsOfServiceContent h3 {
+      font-size: 1.3rem;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+  
+    .termsOfServiceContent p {
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+  
+    .termsOfServiceContent ul {
+      padding-left: 15px;
+    }
+  
+    .termsOfServiceContent li {
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+    }
+  }
+  
+  /* さらに小さい画面 (例: 576px 以下) */
+  @media (max-width: 576px) {
+    .termsOfServiceContent h1 {
+      font-size: 1.6rem;
+    }
+  
+    .termsOfServiceContent h2 {
+      font-size: 1.2rem;
+    }
+  
+    .termsOfServiceContent p {
+      font-size: 0.8rem;
+    }
+  
+    .termsOfServiceContent li {
+      font-size: 0.8rem;
+    }
+  }

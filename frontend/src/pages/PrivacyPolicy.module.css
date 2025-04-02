@@ -1,0 +1,109 @@
+.privacyPolicyContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.privacyPolicyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .privacyPolicyText {
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .privacyPolicyContent h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #222 /* 例: 別のアクセントカラー */
+  }
+  
+  .privacyPolicyContent p {
+    margin-bottom: 15px;
+    font-size: 0.9rem; /* モバイルでの基本フォントサイズを少し小さく */
+  }
+
+  .privacyPolicyContent p a {
+    color: #337ab7;
+    text-decoration: underline; /* 下線を引く */
+    transition: color 0.3s ease; /* ホバー時のアニメーション */
+  }
+  
+  .privacyPolicyContent p a:hover {
+    color: #0056b3; /* ホバー時にもう少し濃い青 */
+    text-decoration: none; /* ホバー時に下線を消す */
+  }
+  
+  .privacyPolicyContent ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+  
+  .privacyPolicyContent li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+    font-size: 1rem; /* モバイルでのリストアイテムのフォントサイズを少し小さく */
+  }
+  
+  /* モバイル対応 (画面幅 768px 以下) */
+  @media (max-width: 768px) {
+    .privacyPolicyContent {
+      padding: 15px; /* パディングを少し小さく */
+      line-height: 1.7; /* 行間を少し狭く */
+    }
+  
+    .privacyPolicyContent h1 {
+      font-size: 1.8rem; /* モバイルでの h1 サイズ */
+      margin-bottom: 20px;
+    }
+  
+    .privacyPolicyContent h2 {
+      font-size: 1.3rem; /* モバイルでの h2 サイズ */
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+  
+    .privacyPolicyContent p {
+      font-size: 0.85rem; /* モバイルでのフォントサイズをさらに少し小さく */
+      margin-bottom: 12px;
+    }
+  
+    .privacyPolicyContent ul {
+      padding-left: 15px; /* リストのインデントを少し小さく */
+    }
+  
+    .privacyPolicyContent li {
+      font-size: 0.85rem; /* モバイルでのリストアイテムのフォントサイズをさらに少し小さく */
+      margin-bottom: 6px;
+    }
+  }
+  
+  /* さらに小さい画面 (例: 576px 以下) */
+  @media (max-width: 576px) {
+    .privacyPolicyContent h1 {
+      font-size: 1.6rem;
+    }
+  
+    .privacyPolicyContent h2 {
+      font-size: 1.2rem;
+    }
+  
+    .privacyPolicyContent p {
+      font-size: 0.8rem;
+    }
+  
+    .privacyPolicyContent li {
+      font-size: 0.8rem;
+    }
+  }

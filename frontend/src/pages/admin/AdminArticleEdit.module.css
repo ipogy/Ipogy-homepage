@@ -1,0 +1,123 @@
+.articleForm {
+    margin-top: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .formGroup input[type="text"],
+  .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .formGroup textarea {
+    resize: vertical;
+  }
+  
+  .submitButton {
+    background-color: #009688; /* アクセントカラー */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #00796a;
+  }
+  
+  .success {
+    color: green;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid lightgreen;
+    border-radius: 4px;
+    background-color: #f0fff0;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ffdddd;
+    border-radius: 4px;
+    background-color: #ffe0e0;
+  }
+
+  /* 共通のコンテナースタイル */
+.createEditContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* フォームとプレビューの間隔 */
+  }
+  
+  .articleForm {
+    /* 既存のスタイル */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* フォーム要素の間隔 */
+  }
+  
+  .previewButton {
+    background-color: #64b5f6; /* プレビューボタンの色 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .previewButton:hover {
+    background-color: #42a5f5;
+  }
+  
+  .previewContainer {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .previewContainer h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .previewContainer h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .previewContent {
+    line-height: 1.8;
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .h2 {
+      font-size: 1.6rem;
+    }
+    
+    .actionItem h3 {
+      font-size: 1.4rem;
+    }
+  }

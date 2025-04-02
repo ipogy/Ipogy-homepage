@@ -1,0 +1,71 @@
+.adminLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .adminHeader {
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .adminHeader h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .adminHeader nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .adminHeader nav ul li {
+    margin-left: 15px;
+  }
+  
+  .adminHeader nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .adminHeader button {
+    padding: 8px 15px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .adminHeader button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .adminContent {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .adminFooter {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
+
+  @media (max-width: 768px) {
+    .adminHeader h1 {
+      font-size: 1.3rem;
+    }
+    
+    .adminHeader li {
+      font-size: 1.0rem;
+    }
+  }

@@ -1,0 +1,73 @@
+#version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend # Node.jsバックエンドのDockerfileがあるディレクトリ
+      dockerfile: Dockerfile
+      args:
+        BACKEND_PORT: ${BACKEND_PORT}
+    container_name: backend_app
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      JWT_SECRET: ${JWT_SECRET}
+      PORT: "${BACKEND_PORT}"
+      SMTP_HOST: ${SMTP_HOST}
+      SMTP_PORT: ${SMTP_PORT}
+      SMTP_SECURE: ${SMTP_SECURE}
+      SMTP_USER: ${SMTP_USER}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      CONTACT_EMAIL: ${CONTACT_EMAIL}
+      FRONT_URL_HTTP: ${FRONT_URL_HTTP}
+      FRONT_URL_HTTPS: ${FRONT_URL_HTTPS}
+      OTP_EXPIRATION_TIME: ${OTP_EXPIRATION_TIME}
+    volumes:
+      - ./backend:/app
+      - ./backend/node_modules:/app/node_modules
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    depends_on:
+      - db
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:${BACKEND_PORT}/api/health"] # ヘルスチェックのエンドポイント例
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_BACKEND_API_URL: ${VITE_BACKEND_API_URL}
+    container_name: frontend_app
+    volumes:
+      - ./frontend:/app
+      - ./frontend/node_modules:/app/node_modules
+    ports:
+      - "${FRONTEND_PORT}:80" # ホストのPORTをコンテナの80にマッピング
+    depends_on:
+      - backend
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"] # Nginxのデフォルトポートは80
+      interval: 5s
+      timeout: 5s
+      retries: 5

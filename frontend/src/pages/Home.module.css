@@ -1,0 +1,247 @@
+.homeContainerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 100%; /* フォームをコンテナの幅に合わせる */
+  max-width: 1200px; /* 最大幅を設定 */
+  }
+
+.heroSection {
+    padding: 10px 10px; /* 上下の余白と左右の余白 */
+    width: 100%; /* フォームをコンテナの幅に合わせる */
+    max-width: 1200px; /* 最大幅を設定 */
+  }
+  
+  .heroContent {
+    background-color: #e0e0e0; /* 仮の背景色 */
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* 縦方向中央揃え */
+    justify-content: space-between; /* 左右に配置 */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heroText {
+    flex: 1; /* テキスト領域が利用可能なスペースの1/2を占める */
+    padding-right: 40px; /* 画像との間に余白 */
+    text-align: center;
+  }
+  
+  .heroText h1 {
+    font-size: 2.5rem;
+    color: #424242;
+    margin-bottom: 10px;
+  }
+  
+  .heroText p {
+    font-size: 1.1rem;
+    color: #616161;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .heroImage {
+    flex: 1; /* 画像領域が利用可能なスペースの1/2を占める */
+    background-image: url('/images/00074-422372899.png'); /* 仮の背景画像パス */
+    background-size: cover;
+    background-position: center;
+    min-height: 300px; /* 仮の高さ */
+    border-radius: 8px; /* 必要に応じて */
+  }
+  
+  .servicesSection {
+    padding: 60px 20px;
+    background-color: #fff; /* 背景色 */
+    width: 100%; /* フォームをコンテナの幅に合わせる */
+    max-width: 1200px; /* 最大幅を設定 */
+  }
+  
+  .servicesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .servicesContainer h2 {
+    font-size: 2rem;
+    color: #424242;
+    margin-bottom: 30px;
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 最小幅250pxで自動配置 */
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .serviceItem {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .serviceIcon {
+    font-size: 3rem !important; /* !important で Material Icons のデフォルトサイズを上書き */
+    color: #009688; /* アクセントカラー */
+    margin-bottom: 15px;
+  }
+  
+  .serviceItem h3 {
+    font-size: 1.5rem;
+    color: #424242;
+    margin-bottom: 10px;
+  }
+  
+  .serviceItem p {
+    font-size: 1rem;
+    color: #616161;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .latestArticlesSection {
+    width: 100%; /* フォームをコンテナの幅に合わせる */
+  }
+  
+  .latestArticlesContainer {
+    background-color: #f9f9f9; /* 背景色 */
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .latestArticlesContainer h2 {
+    font-size: 2rem;
+    color: #424242;
+    margin-bottom: 30px;
+  }
+  
+  .articlesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 最小幅300pxで自動配置 */
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .articleItem {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .articleItem h3 {
+    font-size: 1.2rem;
+    color: #424242;
+    margin-bottom: 10px;
+    overflow: hidden;         /* はみ出すタイトルを隠す */
+    text-overflow: ellipsis; /* ... で表示 */
+    white-space: nowrap;     /* 折り返さない */
+  }
+  
+  .articleDate {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .articleItem p {
+    font-size: 1rem;
+    color: #616161;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    /* 概要がないため非表示 */
+    display: none;
+  }
+  
+  .articleItem a {
+    display: inline-block;
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .articleItem a:hover {
+    text-decoration: underline;
+  }
+  
+  /* レスポンシブ対応（タブレット以下） */
+  @media (max-width: 1300px) {
+    .servicesGrid {
+      grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 最小幅250pxで自動配置 */
+    }
+  
+    .heroText {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .heroImage {
+      width: 100%;
+    }
+
+    .articlesGrid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); /* タブレットなどで調整 */
+      }
+  }
+  
+  
+  /* レスポンシブ対応 */
+  @media (max-width: 768px) {
+    .homeContainerWrapper {
+      padding: 0px 12px;
+    }
+    .homeContainer {
+      padding: 0px 10px;
+    }
+    .heroSection {
+        padding: 0px 5px; /* 上下の余白と左右の余白 */
+    }
+    .heroContent {
+      flex-direction: column; /* 縦並びにする */
+      align-items: stretch; /* 左右いっぱいに広げる */
+      padding: 0px 10px;
+    }
+    .heroContent p {
+      padding: 0px;
+      margin-bottom: 0px;
+    }
+    .heroImage {
+      margin-bottom: 15px;
+    }
+
+    .servicesGrid {
+      grid-template-columns: 1fr; /* 1列表示にする */
+    }
+
+    .articlesGrid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 最小幅300pxで自動配置 */ /* スマートフォンで1列表示 */
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .serviceItem {
+      padding: auto;
+    }
+  }
+
+  

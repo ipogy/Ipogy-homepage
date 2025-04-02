@@ -1,0 +1,164 @@
+.imageUploader {
+    width: 800px; /* パソコンでの幅を維持 */
+    /* height: 800px; /* 高さ固定は削除または必要に応じて調整 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .uploadArea {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    align-items: flex-start; /* プレビューと入力欄を上揃えにする */
+  }
+  
+  .previewContainer {
+    width: 300px;
+    height: 200px;
+    border: 2px dashed #999;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .previewPlaceholder {
+    color: #777;
+  }
+  
+  .previewImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .metadataInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .metadataInputs label {
+    font-weight: bold;
+  }
+  
+  .metadataInputs input[type="text"],
+  .metadataInputs textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .metadataInputs textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+  
+  .uploadControls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .responseArea {
+    margin-top: 20px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px; /* レスポンスエリアの最大幅を調整 */
+    white-space: pre-wrap;
+  }
+  
+  .responseArea h3 {
+    margin-top: 0;
+  }
+  
+  .responseArea .code {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }
+  
+  .responseArea button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .responseArea button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .copySuccessMessage {
+    color: green;
+    margin-left: 10px;
+  }
+  
+  /* モバイルデバイス向けのスタイル (画面幅が 600px 以下の場合に適用) */
+  @media screen and (max-width: 900px) {
+    .imageUploader {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .uploadArea {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .previewContainer {
+      width: 100%;
+      max-width: none; /* モバイルでは最大幅を解除 */
+      height: auto;
+      min-height: 150px;
+    }
+  
+    .uploadControls {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .uploadControls button {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 1rem;
+    }
+  
+    .metadataInputs {
+      width: 100%;
+    }
+  
+    .responseArea {
+      width: 95%;
+    }
+  
+    .responseArea button {
+      width: 100%;
+    }
+  
+    .copySuccessMessage {
+      margin-left: 0;
+      margin-top: 5px;
+      display: block;
+    }
+  }

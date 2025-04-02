@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="188.41109mm"
+   height="185.28825mm"
+   viewBox="0 0 188.41109 185.28825"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="cpop.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="cpop_main.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0167041"
+     inkscape:cx="296.54646"
+     inkscape:cy="472.60556"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="188.41109"
+       height="185.28825"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-14.573234,-34.351197)">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:3.023"
+       id="rect1"
+       width="188.41109"
+       height="185.28825"
+       x="14.573235"
+       y="34.351192" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:76.1273;fill:#1a1a1a;stroke:#000000;stroke-width:0.264999"
+       x="46.003716"
+       y="62.565056"
+       id="text1"
+       transform="matrix(9.9298738,0,0,19.538069,-437.64625,-1090.6097)"
+       inkscape:export-filename="cpop.svg"
+       inkscape:export-xdpi="71.452866"
+       inkscape:export-ydpi="71.452866"><tspan
+         x="46.003716"
+         y="62.565056"
+         id="tspan2"><tspan
+           style="stroke:#000070"
+           id="tspan1">C-POP</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:76.1273;fill:#1a1a1a;stroke:#000000;stroke-width:0.264999"
+       x="46.003716"
+       y="62.565056"
+       id="text1-2"
+       transform="matrix(7.0701046,0,0,8.3725582,-207.93456,-396.67949)"><tspan
+         x="46.003716"
+         y="62.565056"
+         id="tspan12"><tspan
+           style="font-family:HGPSoeiKakupoptai;-inkscape-font-specification:'HGPSoeiKakupoptai, Normal'"
+           id="tspan3">から</tspan><tspan
+           style="font-family:HGPSoeiKakupoptai;-inkscape-font-specification:'HGPSoeiKakupoptai, Normal'"
+           id="tspan4">知</tspan><tspan
+           style="font-family:HGPSoeiKakupoptai;-inkscape-font-specification:'HGPSoeiKakupoptai, Normal'"
+           id="tspan5">る</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:76.1273;display:inline;fill:#001a1a;fill-opacity:1;stroke:#000000;stroke-width:0.265041;stroke-dasharray:none"
+       x="46.003716"
+       y="62.565056"
+       id="text1-1"
+       transform="matrix(9.8995279,0,0,13.141201,-405.86109,-655.33754)"><tspan
+         x="46.003716"
+         y="62.565056"
+         id="tspan14"><tspan
+           style="font-family:HGSKyokashotai;-inkscape-font-specification:'HGSKyokashotai, Normal';stroke:#c70000"
+           id="tspan13">中国文化</tspan></tspan></text>
+  </g>
+</svg>

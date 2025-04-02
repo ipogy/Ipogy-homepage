@@ -1,0 +1,109 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    position: relative; /* 追加 */
+    box-sizing: border-box; /* 横幅問題への対応 */
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .logo span {
+    margin: 0px 10px;
+  }
+
+  .logoImage {
+    height: 40px; /* ロゴの高さ調整 */
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .nav ul li a:hover {
+    color: #007bff;
+  }
+  
+  .hamburger {
+    display: none; /* デフォルトでは非表示 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .nav.open ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 小さな画面サイズでのスタイル */
+  @media (max-width: 768px) {
+    .nav {
+      max-width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%; /* 親要素の幅に合わせる */
+      background-color: #f8f8f8;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+      transform: translateY(-100%); /* デフォルトで上に隠しておく */
+      transition: transform 0.3s ease-in-out; /* 滑らかに表示・非表示 */
+      display: none; /* デフォルトで非表示 */
+    }
+
+    .nav.open {
+      display: block; /* メニューが開いているときに表示 */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: calc(100% - 2rem);
+      background-color: #e0e0e0; /* 開いた時の背景色を変更 */
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+      transform: translateY(0); /* メニューを表示位置に移動 */
+    }
+
+    .nav.open ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav.open ul li a {
+      color: #333; /* 開いた時のリンクの色を変更 */
+      padding: 0.5rem 0; /* リンクの上下の余白を調整 */
+      display: block; /* リンクをブロック要素にする (クリック範囲を広げる) */
+      width: 100%; /* リンクを親要素の幅いっぱいに */
+      text-align: center; /* リンクのテキストを中央揃え */
+    }
+
+    .nav.open ul li a:hover {
+      background-color: #ddd; /* ホバー時の背景色を変更 */
+      color: #007bff; /* ホバー時のリンクの色を変更 */
+    }
+  
+    .hamburger {
+      display: block; /* 小さい画面で表示 */
+      color: #333;
+      margin-top: auto;
+    }
+  }

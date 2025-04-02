@@ -1,0 +1,152 @@
+.blogWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%; /* フォームをコンテナの幅に合わせる */
+  max-width: 1200px; /* 最大幅を設定 */
+  }
+
+.articleList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr)); /* 横に並べる数を増やす */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 20px;
+    padding: 0px;
+    width: 100%;
+    max-width: 800px; /* より広く */
+  }
+  
+  .articleItem {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; /* ホバー時のアニメーションを追加 */
+    padding-bottom: 60px; /* ボタンの高さに合わせて調整 */
+    display: flex; /* Flexbox レイアウトを適用 */
+    flex-direction: column; /* 要素を縦に配置 */
+    position: relative; /* 相対位置指定 (子要素の絶対位置指定の基準) */
+    min-height: 250px; /* 必要に応じて最小の高さを設定 */
+  }
+  
+  .articleItem:hover {
+    transform: translateY(-5px); /* 少し浮き上がるような効果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .articleItem h2 {
+    font-size: 1.5rem;
+    color: #424242;
+    margin-bottom: 10px;
+  }
+  
+  .articleItem h2 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .articleItem h2 a:hover {
+    color: #009688;
+  }
+
+  .totalCount {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: center; /* 必要に応じて */
+  }
+  
+  .articleDate {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .articleTags {
+    margin-top: 10px;
+    position: absolute; /* 絶対位置指定 */
+    bottom: 14px; /* 下からの距離 */
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+  }
+  
+  .pagination button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .pagination button.active {
+    background-color: #009688;
+    color: white;
+    border-color: #009688;
+  }
+  
+  /* 必要に応じてレスポンシブ対応などを追加 */
+  /* レスポンシブ対応 */
+  @media (max-width: 768px) {
+    .articleList {
+      max-width: 500px;
+      display: grid;
+      align-items: center;
+      gap: 0px;
+      padding: 5px;
+      grid-template-columns: 1fr; /* 1列表示にする */
+    }
+  }
+  
+  @media (max-width: 568px) {
+    .articleList {
+      margin-bottom: 0px;
+    }
+
+    .articleItem h2 {
+      font-size: 1rem;
+    }
+
+    .articleItem {
+      min-height: 200px; /* 必要に応じて最小の高さを設定 */
+    }
+
+    .articleTags {
+      position: absolute; /* 絶対位置指定 */
+      bottom: 18px; /* 下からの距離 */
+    }
+  }

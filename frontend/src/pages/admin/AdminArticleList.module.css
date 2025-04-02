@@ -1,0 +1,176 @@
+.articleListWrapper {
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+.articleList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr)); /* 画面幅に合わせて自動的に列数を調整 */
+    gap: 20px;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .articleItem {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-bottom: 60px; /* ボタンの高さに合わせて調整 */
+    display: flex; /* Flexbox レイアウトを適用 */
+    flex-direction: column; /* 要素を縦に配置 */
+    position: relative; /* 相対位置指定 (子要素の絶対位置指定の基準) */
+    min-height: 200px; /* 必要に応じて最小の高さを設定 */
+  }
+  
+  .articleTitleLink {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .articleTitleLink:hover {
+    color: #007bff;
+  }
+  
+  .articleDate {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .articleStatus {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .published {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .unpublished {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .articleActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .editButton {
+    display: inline-block; /* インラインブロックに変更 */
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute; /* 絶対位置指定 */
+    bottom: 15px; /* 下からの距離 */
+    box-sizing: border-box; /* paddingを含んだ幅にする */
+  }
+  .deleteButton {
+    display: inline-block; /* インラインブロックに変更 */
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute; /* 絶対位置指定 */
+    bottom: 15px; /* 下からの距離 */
+    transform: translateX(110%); /* 水平方向の中央揃え */
+    box-sizing: border-box; /* paddingを含んだ幅にする */
+  }
+  
+  .editButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+  }
+  
+  .editButton:hover {
+    opacity: 0.8;
+  }
+  
+  .deleteButton {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+  }
+  
+  .deleteButton:hover {
+    opacity: 0.8;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .pagination button:hover {
+    background-color: #eee;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .createButton {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .createButton:hover {
+    background-color: #218838;
+  }
+
+  
+  @media (max-width: 768px) {
+    .articleListWrapper h2 {
+      font-size: 1.6rem;
+    }
+
+    .articleList {
+        gap: 2px;
+        padding: 5px;
+      grid-template-columns: 1fr; /* 1列表示にする */
+    }
+
+    .actionItem h3 {
+      font-size: 1.4rem;
+    }
+  }

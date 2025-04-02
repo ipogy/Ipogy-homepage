@@ -1,0 +1,69 @@
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.splash-screen.hidden {
+  opacity: 0;
+}
+
+.splash-screen img {
+  max-height: 30%;
+}
+
+.main-content {
+  opacity: 0; /* 非表示状態 */
+  animation: opacity 0.3s ease-out 0.1s forwards;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 画面全体を覆うように */
+}
+
+.content {
+  flex-grow: 1; /* コンテンツ領域が残りのスペースを埋める */
+  padding-top: 20px; /* ヘッダーの高さ分だけpadding-topを設定してコンテンツが隠れないように */
+  justify-content: center; /* 追加: 子要素を中央に配置 */
+}
+/*
+.page-container {
+  max-width: 1200px; /* 必要に応じて調整 *
+  margin: 40px auto; /* 中央寄せ、左右に余白 *
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-container h1 {
+  font-size: 2rem;
+  color: #424242;
+  margin-bottom: 20px;
+  text-align: center;
+}*/
+
+.page-container p {
+  font-size: 1rem;
+  color: #616161;
+  line-height: 1.6;
+}

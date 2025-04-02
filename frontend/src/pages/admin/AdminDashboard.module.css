@@ -1,0 +1,52 @@
+.dashboardContainer {
+    padding: 20px;
+    color: #333;
+  }
+  
+  .dashboardActions {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .actionItem {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .actionItem h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .actionItem ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .actionItem ul li {
+    margin-bottom: 8px;
+  }
+  
+  .actionItem ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .actionItem ul li a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .dashboardContainer h2 {
+      font-size: 1.6rem;
+    }
+
+    .actionItem h3 {
+      font-size: 1.4rem;
+    }
+  }

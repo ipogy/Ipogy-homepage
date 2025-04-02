@@ -1,0 +1,14 @@
+.env
+db_data
+
+backend/uploads/images/*
+backend/node_modules/
+
+db_data
+
+db/init.sql
+
+frontend/app/
+frontend/node_modules/
+
+others

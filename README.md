@@ -1,7 +1,8 @@
 # Ipogy's Homepage
 
 私自身のホームページの公開レポジトリです。
-![トップページ](https://api.ipogy.org/api/images/1743619041820-0c42710e.png "トップページ")
+
+<img src="https://api.ipogy.org/api/images/1743619041820-0c42710e.png" width="600" alt="ホームページの画像">
 
 
 Reactやnode.js、DBなどの仕組みを学び、3層アーキテクチャを意識して開発したホームページです。
